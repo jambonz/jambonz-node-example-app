@@ -10,8 +10,12 @@
   },
   "author": "Dave Horton",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jambonz/jambonz-node-example-app.git"
+  },
   "dependencies": {
-    "@jambonz/node-client": "0.0.3",
+    "@jambonz/node-client": "^0.0.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "google-spreadsheet": "^3.1.15",
