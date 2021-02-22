@@ -15,6 +15,7 @@
     "url": "git@github.com:jambonz/jambonz-node-example-app.git"
   },
   "dependencies": {
+    "@google-cloud/translate": "^6.1.0",
     "@jambonz/node-client": "^0.0.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
