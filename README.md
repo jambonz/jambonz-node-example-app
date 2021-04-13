@@ -48,3 +48,9 @@ An application that answers a call, plays a brief message and hangs up, then mak
 
 The following environment variables are required:
 - CALLBACK_BASE_URL - the base URL to embed in the call_hook property of the POST to create an outbound call
+
+### /translator
+An application that uses Google Translate to translate your sentences into the language of your choice.
+
+The following environment variables are required:
+- GOOGLE_TRANSCRIBE_CREDENTIALS - path to a google json key file used to authenticate to Google Translate.
