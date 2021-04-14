@@ -24,11 +24,13 @@ Object.assign(app.locals, {
   })
 });
 
+/*
 if (process.env.HTTP_USERNAME && process.env.HTTP_PASSWORD) {
   const users = {};
   users[process.env.HTTP_USERNAME] = process.env.HTTP_PASSWORD;
   app.use(basicAuth({users}));
 }
+*/
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/', routes);

@@ -2,7 +2,7 @@
 
 An example jambonz application built using [@jambonz/node-client](https://www.npmjs.com/package/@jambonz/node-client).
 
-The application requires environment variables to be set in order to operate.  The necessary environmebt variables are defined in the sections below.
+The application requires environment variables to be set in order to operate.  The necessary environment variables are defined in the sections below.
 
 This application exposes the following endpoints
 
