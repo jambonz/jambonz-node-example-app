@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const {WebhookResponse} = require('@jambonz/node-client');
 const basicAuth = require('express-basic-auth');
 const opts = Object.assign({
   timestamp: () => {
@@ -33,6 +34,9 @@ if (process.env.HTTP_USERNAME && process.env.HTTP_PASSWORD) {
 */
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+if (process.env.WEBHOOK_SECRET) {
+  app.use(WebhookResponse.verifyJambonzSignature(process.env.WEBHOOK_SECRET));
+}
 app.use('/', routes);
 app.use((err, req, res, next) => {
   logger.error(err, 'burped error');
