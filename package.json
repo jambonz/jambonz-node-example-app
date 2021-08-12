@@ -16,13 +16,15 @@
   },
   "dependencies": {
     "@google-cloud/translate": "^6.1.0",
-    "@jambonz/node-client": "^0.2.1",
+    "@jambonz/node-client": "^0.2.4",
+    "aws-sdk": "^2.889.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0",
     "google-spreadsheet": "^3.1.15",
     "pino": "^6.11.1",
-    "short-uuid": "^4.1.0"
+    "s3-upload-stream": "^1.0.7",
+    "ws": "^7.4.5"
   },
   "devDependencies": {
     "eslint": "^7.20.0",

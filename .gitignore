@@ -3,6 +3,7 @@ logs
 *.log
 data/*
 .env
+ecosystem.config.js
 
 # Runtime data
 pids
