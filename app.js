@@ -40,7 +40,8 @@ if (process.env.HTTP_USERNAME && process.env.HTTP_PASSWORD) {
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 if (process.env.WEBHOOK_SECRET) {
-  app.use(WebhookResponse.verifyJambonzSignature(process.env.WEBHOOK_SECRET));
+  const secrets = process.env.WEBHOOK_SECRET.split(',').map((s) => s.trim());
+  app.use(WebhookResponse.verifyJambonzSignature(secrets));
 }
 app.use('/', routes);
 app.use((err, req, res, next) => {
