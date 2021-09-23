@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@google-cloud/translate": "^6.1.0",
-    "@jambonz/node-client": "^0.2.6",
+    "@jambonz/node-client": "^0.2.8",
     "aws-sdk": "^2.889.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -24,6 +24,7 @@
     "google-spreadsheet": "^3.1.15",
     "pino": "^6.11.1",
     "s3-upload-stream": "^1.0.7",
+    "short-uuid": "^4.2.0",
     "ws": "^7.4.5"
   },
   "devDependencies": {
