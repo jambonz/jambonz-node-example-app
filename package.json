@@ -16,8 +16,9 @@
   },
   "dependencies": {
     "@google-cloud/translate": "^6.1.0",
-    "@jambonz/node-client": "^0.2.20",
+    "@jambonz/node-client": "^0.3.15",
     "aws-sdk": "^2.889.0",
+    "axios": "^0.27.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0",
